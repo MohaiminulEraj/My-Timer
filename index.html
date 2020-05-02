@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Timer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>My Timer :D</h1>
+    <section id="controls">
+        <div class="input-group">
+            <label for="minutes-input">Minutes: </label>
+            <input type="number" placeholder="0" id="minutes-input" max="300" min="0">
+        </div>
+        <div class="input-group">
+            <label for="seconds-input">Seconds: </label>
+            <input type="number" placeholder="0" id="seconds-input" max="59" min="0" step="5">
+        </div>
+        <button type="button" id="start-button" onclick="startTimer()">Start</button>
+        <button type="button" id="stop-button" disabled onclick="stopTimer()">Stop</button>
+        <button type="button" id="pause-button" disabled onclick="pauseTimer()">Pause</button>
+    </section>
+    <h2><span id="minutes">0</span>: <span id="seconds">00</span> </h2>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
